@@ -136,9 +136,10 @@ nav {
 .about-text {
   flex: 2 1 40rem;
   justify-content: space-around;
-}
-.about-text {
   padding: 3rem 10rem;
+}
+.about-text p {
+  color: var(--gray-text);
 }
 .about-text h2 {
   padding: 4rem;
