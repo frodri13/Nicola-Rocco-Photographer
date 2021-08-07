@@ -14,7 +14,7 @@ html {
   --big: calc(4rem + 1vw);
   --special-color: #906272;
   --background-color: #414141;
-  --gray-text: #525252;
+  --gray-text: #8b949e;
 }
 h1 {
   font-size: var(--header1);
@@ -96,8 +96,10 @@ nav {
 }
 .hero-introduction p {
   padding: 5rem 10rem;
+  color: var(--gray-text);
 }
 .hero-introduction h2 {
+  font-family: "Courier New", Courier, monospace;
   padding-top: 3rem;
 }
 .hero-introduction a {
@@ -123,4 +125,64 @@ nav {
   to {
     opacity: 1;
   }
+}
+
+/* About Section */
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-text {
+  flex: 2 1 40rem;
+  justify-content: space-around;
+}
+.about-text {
+  padding: 3rem 10rem;
+}
+.about-text h2 {
+  padding: 4rem;
+}
+.about-image {
+  flex: 1 1 40rem;
+  position: relative;
+}
+
+.about-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* Media */
+
+@media screen and (max-width: 842px) {
+  .burger span {
+    padding: 0.2rem 2rem;
+    background: var(--gray-text);
+    margin: 0.5rem 0rem;
+    display: block;
+  }
+  .hero-introduction p {
+    padding: 5rem 3rem;
+  }
+  .nav-links a {
+    color: white;
+    font-size: var(--header3);
+    text-decoration: underline;
+  }
+  .nav-links {
+    background: var(--background-color);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s ease;
+  }
+}
+/* About Section */
+.about-text div {
+  padding: 3rem 3rem;
 }
