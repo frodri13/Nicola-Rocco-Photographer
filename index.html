@@ -17,18 +17,18 @@
     <header class="main-head">
       <h1 id="logo">Nicola Rocco</h1>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-about" href="#about">About</a></li>
+        <li><a class="nav-gallery" href="#gallery">Work</a></li>
+        <li><a class="nav-contact" href="#contact">Contact</a></li>
       </ul>
       <div class="burger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line2"></span>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="hero-introduction flex">
           <h2>
             Nicola Rocco <br />
@@ -50,9 +50,12 @@
           />
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about-image">
-          <img src="./img/limon.jpeg" alt="" />
+          <img
+            src="./img/limon.jpeg"
+            alt="Old man that seems that ate a lemon or something sour"
+          />
         </div>
         <div class="about-text flex">
           <h2>Nicola Rocco</h2>
@@ -85,7 +88,7 @@
           </div>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <header class="gallery-head">
           <h2>Snippets of Theather</h2>
           <p>Some of the most popular plays from Venezuela captured in 2D</p>
@@ -102,28 +105,32 @@
         />
         <img
           class="gallery3"
-          src="./img/miserables.jpeg"
-          alt="Man singing for freedom"
+          src="./img/senora.jpeg"
+          alt="lady holding a box"
         />
+
         <img
           class="gallery4"
           src="./img/banca.jpeg"
           alt="man sitting on a bench with leaves on the ground"
         />
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="form-wrapper flex">
           <h2>
             Get in <br />
             <span>touch.</span>
           </h2>
-          <form action="">
+          <form netifly>
             <label for="email">Your Email:</label>
             <input type="email" id="email required" />
             <button type="submit">Submit</button>
           </form>
         </div>
-        <img src="./img/senora.jpeg" alt="" />
+        <img
+          src="./img/miserables.jpeg"
+          alt="Man singing from the play 'Les Miserables'"
+        />
       </section>
     </main>
     <footer>
@@ -137,5 +144,6 @@
         </li>
       </ul>
     </footer>
+    <script src="./app.js"></script>
   </body>
 </html>
