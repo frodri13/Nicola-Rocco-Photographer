@@ -247,7 +247,7 @@ footer {
   background: var(--background-color);
   color: white;
   display: flex;
-  padding: 3rem 5%;
+  padding: 1rem 5%;
   align-items: center;
   flex-wrap: wrap;
 }
