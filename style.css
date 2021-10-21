@@ -298,9 +298,9 @@ footer h4 {
   }
 
   /* About Section */
-  .about-text div {
-    padding: 3rem 3rem;
-  }
+  /* .about-text div {
+    padding: 1rem 1rem;
+  } */
   /* Gallery */
   .gallery img {
     grid-row: auto;
